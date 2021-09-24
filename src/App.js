@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Accordion from './components/Accordion';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section style={{marginTop: "100px"}}>
+      <Accordion title='First FAQ'>
+        <p>First FAQ</p>
+      </Accordion>
+      <Accordion title='Second FAQ'>
+        <p>Second FAQ</p>
+      </Accordion>
+      <Accordion title='Third FAQ'>
+        <p>Third FAQ</p>
+      </Accordion>
+      <Accordion title='Fourth FAQ'>
+        <p>Fourth FAQ</p>
+      </Accordion>
+    </section>
   );
 }
 
